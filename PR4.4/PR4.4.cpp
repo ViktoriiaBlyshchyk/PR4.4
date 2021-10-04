@@ -16,7 +16,8 @@ int main()
 	
 	cout << fixed;
 	cout << "---------------------------" << endl;
-	cout << " |" << setw(7) << "y" << " |" << endl;
+	cout << "|" << setw(5) << "x" << " |"
+		<< setw(7) << "y" << " |" << endl;
 	cout << "---------------------------" << endl;
 
 	x = xp;
@@ -39,7 +40,8 @@ int main()
 						else
 							y = ((R * x) - (3 * R)) / 6;
 
-		cout << " |" << setw(10) << setprecision(3) << y
+		cout << "|" << setw(7) << setprecision(2) << x
+			<< " |" << setw(10) << setprecision(3) << y
 			<< " |" << endl;
 		x += dx;
 	}
